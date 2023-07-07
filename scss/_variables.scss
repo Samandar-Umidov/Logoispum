@@ -1,0 +1,30 @@
+:root {
+  --main-font-family: "Roboto", "Arial", sans-serif;
+  --main-font-weight: 700;
+  --main-primary-color: #3d3a41;
+  --main-secondary-color: #211f25;
+  --main-font-size: 16px;
+  --main-line-height: 120%;
+  --main-bg-color: #fcfbbf;
+  --main-bg: #fff;
+  --hero-bg: url("../images/her-bg-light-mobile.svg");
+  --secondary-bg: #ebebeb;
+  --third-bg: #F7F5FF;
+  --main-text-color: #211f25;
+  --secondary-text-color: #3D3A41;
+  --contact-bg: #6B50FF;
+  --news-bg: #F4FBFF;
+  --footer-bg: #211F25;
+}
+
+body.dark{
+  --hero-bg: url("../images/hero-dark.svg");
+  --main-bg: #000;
+  --secondary-bg: #211F25;
+  --main-text-color: #fff;
+  --secondary-text-color: #D6D6D6;
+  --third-bg: #555555;
+  --contact-bg: linear-gradient(90deg, #000000, #1A1822, #6B50FF, #FF94C7);
+  --news-bg: #211F25;
+  --footer-bg: #000;
+}

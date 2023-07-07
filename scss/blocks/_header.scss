@@ -1,0 +1,105 @@
+.header-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  order: 2;
+}
+.site-header{
+  overflow-x: hidden;
+}
+.sitenav-list{
+  display: flex;
+  align-items: center;
+  @include list-reset;
+}
+.sitenav-item{
+  margin-left: 25px;
+}
+.sitenav-link {
+  color: #FFF;
+  font-size: 18px;
+  font-family: Nunito;
+  font-weight: 400;
+  line-height: 155%;
+  letter-spacing: 0.18px;
+  text-decoration: none;
+}
+.sitenav-item.link{
+  display: none;
+}
+.mobile-nav{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-bg);
+  z-index: 1;
+  background-color: #7e35eb;
+  display: none;
+}
+.mobile-nav.open{
+  left: 0;
+  display: block;
+}
+.menu-btn{
+  order: 3;
+  z-index: 9;
+  background-image: url("../images/menu-svgrepo-com.svg");
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  cursor: pointer;
+  
+}
+.menu-btn.open{
+  background-image: url("../images/close-circle-svgrepo-com.svg");
+  width: 30px;
+  height: 30px;
+}
+.mobile-nav__logo {
+  margin: 0;
+  padding-top: 21px;
+}
+.mobile-nav__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 93px;
+}
+.mobile-nav__menu-item {
+  margin-bottom: 40px;
+}
+.mobile-nav__menu-link {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 24px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+@media (min-width: 778px) {
+  .sitenav-item.link{
+    display: block;
+  }
+  
+  .menu-btn{
+    display: none;
+  }
+  
+  .logo{
+    order: 0;
+    height: 45px;
+  }
+  
+  .mobile-nav{
+    display: none;
+  }
+  
+}

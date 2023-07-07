@@ -1,0 +1,152 @@
+.news {
+  padding-top: 120px;
+  background-color: var(--news-bg);
+}
+
+.news__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.news__title {
+  margin: 0;
+  color: var(--main-text-color);
+  font-family: Nunito;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+.news__text {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: var(--secondary-text-color);
+  text-align: center;
+  font-family: Nunito;
+  font-size: 17.778px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.news__list {
+  @include list-reset;
+}
+.news__item {
+}
+.news__img {
+  width: 300px;
+}
+.news__card {
+  padding: 23px;
+  
+}
+.datebox {
+  display: flex;
+  gap: 23px;
+  padding-left: 1px;
+}
+.news__time-desc {
+  padding-top: 4px;
+  margin: 0;
+  color: var(--pragraph);
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.news__span {
+  position: relative;
+  padding: 4px 8px;
+  color: var(--main-text-color);
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  background-color: var(--news-bg);
+}
+.news__textbox {
+  max-width: 250px;
+  width: 100%;
+  text-align: left;
+}
+.news__subtitle {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  color: var(--main-text-color);
+  font-family: Nunito;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 140%;
+}
+.news__desc {
+  margin: 0;
+  margin-bottom: 31px;
+  color: var(--secondary-text-color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.news__link {
+  display: block;
+  margin-bottom: 61px;
+  color: #FF007A;
+  font-family: Nunito;
+  font-size: 15.61px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none;
+  text-align: left;
+  background-image: url("../images/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + -63px) calc(50% - -2px);
+}
+
+
+
+@media only screen and (min-width: 450px) {
+  .news__img {
+    width: 343px;
+  }
+  .news__textbox {
+    width: 341px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .news__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .news__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+  }
+  .news__titlebox {
+    display: flex;
+     margin-right: 700px;
+    flex-direction: column;
+    justify-content: flex-start;
+     align-items: flex-start;
+  
+  }
+  
+  .news__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
